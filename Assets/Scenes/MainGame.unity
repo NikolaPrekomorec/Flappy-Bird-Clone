@@ -138,15 +138,15 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 56397901}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.46, y: 0.3}
+  m_Offset: {x: 0.46, y: 0.21}
   serializedVersion: 2
-  m_Radius: 1.1
+  m_Radius: 0.95
 --- !u!50 &56397903
 Rigidbody2D:
   serializedVersion: 4
@@ -1154,12 +1154,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1013184635906882, guid: 17c729f04f44ed44c87758bbabcf4358, type: 2}
   poolSize: 20
-  shiftSpeed: 50
-  spwnRate: 5
+  shiftSpeed: 100
+  spwnRate: 2.2
   ySpwnRange:
     min: -2
     max: 2
-  spwnPos: {x: 6, y: 0, z: 0}
+  spwnPos: {x: 4, y: 0, z: 0}
   spwnImmediate: 0
   spwnImmediatePos: {x: 0, y: 0, z: 0}
   targetAspectRatio: {x: 10, y: 16}
@@ -1411,7 +1411,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1817731031}
-  - component: {fileID: 1817731034}
+  - component: {fileID: 1817731036}
   m_Layer: 5
   m_Name: Clouds
   m_TagString: Untagged
@@ -1437,7 +1437,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0000019073486, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1817731034
+--- !u!114 &1817731036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1449,12 +1449,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1817484872847610, guid: cf4d6b005b9c9d14fb4133f0fdde37d1, type: 2}
-  poolSize: 3
-  shiftSpeed: 25
-  spwnRate: 43
+  poolSize: 2
+  shiftSpeed: 30
+  spwnRate: 0.5
   ySpwnRange:
-    min: 0
-    max: 0
+    min: 0.5
+    max: -0.5
   spwnPos: {x: 7.5, y: 0, z: 0}
   spwnImmediate: 1
   spwnImmediatePos: {x: 0, y: 0, z: 0}

@@ -142,7 +142,7 @@ public class Parallaxer : MonoBehaviour {
         if (GM.gameOver) return;/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         for (int i = 0; i < poolObjects.Length; i++)
         {
-                poolObjects[i].transform.localPosition += Vector3.left * shiftSpeed * Time.deltaTime;
+                poolObjects[i].transform.localPosition += -Vector3.right * shiftSpeed * Time.deltaTime;
                 CheckDisposeObject(poolObjects[i]);
         }
     }
